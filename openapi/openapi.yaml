@@ -5,12 +5,12 @@ info:
   termsOfService: 'https://example.com/terms/'
   contact:
     email: contact@example.com
-    url: 'http://example.com/contact'
+    url: 'swifttdial.com'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
   x-logo:
-    url: 'https://redocly.github.io/openapi-template/logo.png'
+    url: 'https://app.sms.swifttdial.com/assets/logo.png'
   description: >
     This is an **example** API to demonstrate features of OpenAPI specification
 
@@ -58,8 +58,8 @@ tags:
   - name: User
     description: Operations about user
 servers:
-  - url: 'http://example.com/api/v1'
-  - url: 'https://example.com/api/v1'
+  - url: 'https://app.sms.swifttdial.com/assets/logo.png'
+  - url: 'https://app.sms.swifttdial.com/assets/logo.png'
 paths:
   '/users/{username}':
     $ref: 'paths/users@{username}.yaml'
