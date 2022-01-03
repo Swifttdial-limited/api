@@ -2,6 +2,21 @@ openapi: 3.0.2
 info:
   version: "1.0.0"
   title: SwifttDial Bulk and Premium SMS API
+  termsOfService: 'https://swifttdial.com/terms-conditions/'
+  contact:
+    name: Customer API Support
+    url: https://swifttdial.com/contact-us/
+    email: tech@swifttdial.com
+  x-logo:
+    url: https://app.sms.swifttdial.com/assets/logo.png
+  license:
+    name: Apache 2.0
+    url: 'https://app.sms.swifttdial.com'
+  servers:
+  - url: https://bulkdev.swifttdial.com:2778
+    description: Sandbox server
+  - url: //sms.api.swifttdial.com:2778
+    description: Default server
   description:
 
    #Usage Overview
@@ -18,27 +33,11 @@ info:
     # # Authentication
     # This endpoint is used to get an authorization token from the server. The token will be used to
     #   authenticate requests to protected endpoints.
-
-  termsOfService: 'https://swifttdial.com/terms-conditions/'
-  contact:
-    name: Customer API Support
-    url: https://swifttdial.com/contact-us/
-    email: tech@swifttdial.com
-  x-logo:
-    url: https://app.sms.swifttdial.com/assets/logo.png
-  license:
-    name: Apache 2.0
-    url: 'https://app.sms.swifttdial.com'
-  servers:
-  - url: https://bulkdev.swifttdial.com:2778
-    description: Sandbox server
-  - url: //sms.api.swifttdial.com:2778
-    description: Default server
-  tags:
-  - name: Bulk SMS
-    description: Send Bulk Promotional or/and Transactional messages
-  - name: Premium SMS/ subscription sms
-    description: Premium Sms Messages
+#   tags:
+#   - name: Bulk SMS
+#     description: Send Bulk Promotional or/and Transactional messages
+#   - name: Premium SMS/ subscription sms
+#     description: Premium Sms Messages
 paths:
   /outbox/create:
     post:
