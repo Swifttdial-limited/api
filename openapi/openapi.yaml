@@ -5,7 +5,7 @@ info:
   termsOfService: 'https://example.com/terms/'
   contact:
     email: contact@example.com
-    url: 'http://example.com/contact'
+    url: ' https://swifttdial.com'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
@@ -24,8 +24,8 @@ tags:
   - name: Tag
     description: This is a tag description.
 servers:
-  - url: 'http://example.com/api/v1'
-  - url: 'https://example.com/api/v1'
+  - url: 'https://bulkdev.swifttdial.com:2778'
+  - url: 'https://bulkdev.swifttdial.com:2778'
 paths:
   '/users/{username}':
     $ref: 'paths/users@{username}.yaml'
@@ -41,7 +41,7 @@ components:
       type: oauth2
       flows:
         implicit:
-          authorizationUrl: 'http://example.com/api/oauth/dialog'
+          authorizationUrl: 'https://bulkdev.swifttdial.com:2778'
           scopes:
             'read:users': read users info
             'write:users': modify or remove users
